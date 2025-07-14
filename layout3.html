@@ -6,7 +6,7 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 5;
         }
         header {
             background-color: #7AB255;
@@ -14,14 +14,41 @@
             text-align: center;
             color: #fff;
         }
+        section::after {
+            display: table;
+            clear: both;
+        }
         nav {
-
+            float: left;
+            width: 25%;
+            height: 250px;
+            background-color: #B7A97E;
+            padding: 15px;
+            color: blue;
+        }
+        nav ul {
+            padding: 50px;
+        }
+        article {
+            float: left;
+            width: 70%;
+            height: 250px;
+            background-color: #B08F6A;
+            padding: 15px;
+            color: #fff; 
+        }
+        footer {
+            background-color: #7D6342;
+            padding: 15px;
+            text-align: center;
+            color:#fff;
         }
     </style>
     <body>
         <header>
             <h1>Tree</h1>
         </header>
+        <section>
         <nav>
             <ul>
                 <li><a href="https://en.wikipedia.org/wiki/Tree">Wikipedia of tree</a></li> 
@@ -29,6 +56,14 @@
                 <li><a href="https://www.britannica.com/plant/tree">Tree</a></li>
             </ul>
         </nav>
-
+        <article>
+            <h1>How to Study Trees</h1>
+            <p>A person can start the study of trees by making a collection of pressed leaves. One can also make interesting records of leaves, flowers, and seeds by means of simple prints. Collecting twigs and studying their buds and leaf scars is also revealing. They differ with every kind of tree. </p>
+            <p>Botanists divide trees into two main groups, called coniferous and broad-leaved. Those in the first group bear cones and usually have needle-shaped leaves. Among them are the pine, hemlock, spruce, redwood, cedar, and cypress. Most conifers keep their leaves all year, and those that do are called evergreens.</p> 
+        </article>
+        </section>
+        <footer>
+            <p>Trees</p>
+        </footer>
     </body>
 </html>
