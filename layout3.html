@@ -1,74 +1,82 @@
 <html>
     <head>
-        <title>My First Layout</title>
+        <title>My Second Layout</title>
     </head>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
+        body {
+            font-family:Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #7AB255;
-            padding: 15px;
+            background-color: #dcd0c3;
+            padding: 20px;
             text-align: center;
-            color: #fff;
         }
-        section::after {
+        nav {
+            background-color: #abd9c5;
+            color: blue;
+            float: left;
+            padding: 10px;
+            width: 27%;
+            height: 200px;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul li{
+            padding: 10px;
+        }
+        article {
+            background-color: #c9c9c9;
+            float: left;
+            padding: 10px;
+            width: 70%;
+            height: 200px;
+            overflow: auto;
+        }
+        section {
             content:"";
             display: table;
             clear: both;
         }
-        nav {
-            float: left;
-            width: 26%;
-            height: 250px;
-            background-color: #B7A97E;
-            padding: 15px;
-            color: blue;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 50;
-        }
-        nav ul li {
-            padding: 15px;
-        }
-        article {
-            float: left;
-            width: 70%;
-            height: 250px;
-            background-color: #B08F6A;
-            padding: 15px;
-            color: #fff; 
-        }
         footer {
-            background-color: #7D6342;
-            padding: 15px;
+            background-color: #c9d3e7;
+            padding: 20px;
             text-align: center;
-            color:#fff;
         }
     </style>
     <body>
         <header>
-            <h1><b>Tree</b></h1>
+            <h1><b>Pollution</b></h1>
         </header>
         <section>
-        <nav>
-            <ul>
-                <li><a href="https://en.wikipedia.org/wiki/Tree">Wikipedia of tree</a></li> 
-                <li><a href="https://ecotree.green/en/blog/what-is-a-tree">What is a tree?</a></li>
-                <li><a href="https://www.britannica.com/plant/tree">Tree</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h1>How to Study Trees</h1>
-            <p>A person can start the study of trees by making a collection of pressed leaves. One can also make interesting records of leaves, flowers, and seeds by means of simple prints. Collecting twigs and studying their buds and leaf scars is also revealing. They differ with every kind of tree. </p>
-            <p>Botanists divide trees into two main groups, called coniferous and broad-leaved. Those in the first group bear cones and usually have needle-shaped leaves. Among them are the pine, hemlock, spruce, redwood, cedar, and cypress. Most conifers keep their leaves all year, and those that do are called evergreens.</p> 
-        </article>
+            <nav>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Air_pollution">Air Pollution</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Water_pollution">Water Pollution</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Soil_contamination">Soil Pollution</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Noise_pollution">Noise Pollution</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Noise_pollution">Light Pollution</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Pollution</h1>
+                <p>Pollution is the introduction of contaminants into the natural environment that cause harm.Pollution can take the form of any substance or energy.Pollutants, the components of pollution, can be either foreign substances/energies or naturally occurring contaminants.The five main types of pollution are:<u>Air</u>, <u>Water</u>, <u>Soil</u>, <u>Noise</u>, and <u>Light pollution</u>.These forms of pollution can have detrimental effects on the environment, human health, and ecosystems.</p>
+                <h1>Air Pollution</h1>
+                <p>Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere.</p>
+                <h1>Water Pollution</h1>
+                <p>Water pollution is the release of substances into bodies of water that make water unsafe for human use and disrupt aquatic ecosystems.</p>
+                <h1>Soil Pollution</h1>
+                <p>Soil pollution is defined as contamination of soil at higher than normal concentrations by waste materials of human origin that have adverse effects on human and ecosystem health.</p>
+                <h1>Noise Pollution</h1>
+                <p>Noise pollution is the propagation of noise or sound with potential harmful effects on humans and animals.The source of outdoor noise worldwide is mainly caused by machines, transport and propagation systems.</p>
+                <h1>Light Pollution</h1>
+                <p>Light pollution is the excessive or misdirected use of artificial light outdoors, which can negatively impact wildlife, human health, and the environment.</p>
+            </article>
         </section>
         <footer>
-            <p><b>End</b></p>
+            <h1><b>End</b></h1>
         </footer>
     </body>
 </html>

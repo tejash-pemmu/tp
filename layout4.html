@@ -1,82 +1,395 @@
 <html>
     <head>
-        <title>My Second Layout</title>
+        <title>My First Layout</title>
     </head>
     <style>
-        body {
-            font-family:Arial, Helvetica, sans-serif;
+        body{
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #dcd0c3;
-            padding: 20px;
-            text-align: center;
+        .header-container {
+            /* border: 1px solid #000; */
+            overflow: hidden;
+        }
+        .logo {
+            /* border: 1px solid #000; */
+            float: left;
+            margin: 15px;
+            padding: 25px 30px;
+        }
+        .logo img {
+            height: 15px;
         }
         nav {
-            background-color: #abd9c5;
-            color: blue;
-            float: left;
-            padding: 10px;
-            width: 27%;
-            height: 200px;
+            margin: 20px;
+            float: right;
         }
         nav ul {
-            list-style-type: none;
+            padding: 5px;
         }
         nav ul li{
+            /* border: 1px solid #000; */
+            display: inline;
+            margin: 10px;
             padding: 10px;
+            width: 20px;
+            height: 30px;
+        }
+        .hero-container {
+            /* border: 1px solid #000; */
+            background-image: url('./img/image9.jpg');
+            background-size: 100% 100%;
+            color: #fff;
+            padding: 42px;
+            width: 1500px;
+            height: 400px;
+        }
+        .hero-container div {
+            /* border: 1px solid #000; */
+            width: 400px;
+        }
+        .hero-container h5 {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .hero-container h1 {
+            border: 1px solid #fff;
+            width: 210px;
+            text-align: center;
+        }
+        .section-title {
+            float: left;
+            /* border: 1px solid #000; */
+            text-align: center;
+            width: 99.8%;
+            padding: 40px 0;
+            font-family: cursive;
         }
         article {
-            background-color: #c9c9c9;
+            /* border: 1px solid #000; */
             float: left;
-            padding: 10px;
-            width: 70%;
-            height: 200px;
+            text-align: center;
+            width: 99.8%;
+            background-color: rgb(255, 255, 255);
+            padding-bottom: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .product-card {
+            /* border: 1px solid #000; */
+            float: left;
+            margin: 20px 0 0 20px;
+            width: 19.6%;
+            height: 300px;
+            border-radius: 10px;
+            padding: 30px;
             overflow: auto;
         }
-        section {
-            content:"";
-            display: table;
+        .gallery-card {
+            /* border: 1px solid #000; */
+            float: left;
+            margin: 20px 0 0 20px;
+            width: 18.37%;
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        section:after {
+            content: "";
+            display: block;
             clear: both;
         }
-        footer {
-            background-color: #c9d3e7;
+        .list-title {           
+            float: left;
+            margin: 20px;
+        }
+        .list-card {            
+            border: 1px solid #000;
+            border-radius: 10px;
+            width: 264.6px;
+            padding: 10px 0 10px 10px;
+        }
+        .list-card ul {
+            list-style-type: none;
+        }
+        .footer-title {    
             padding: 20px;
-            text-align: center;
+        }
+        .footer-card {    
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+        .footer-card ul li {
+            display: inline;
         }
     </style>
     <body>
-        <header>
-            <h1><b>Pollution</b></h1>
-        </header>
-        <section>
+
+        <div class="header-container">
+            <div class="logo">
+                <img src="./img/logo2.png"/>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Air_pollution">Air Pollution</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Water_pollution">Water Pollution</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Soil_contamination">Soil Pollution</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Noise_pollution">Noise Pollution</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Noise_pollution">Light Pollution</a></li>
+                    <li>Store</li>
+                    <li>Mac</li>
+                    <li>iPad</li>
+                    <li>iPhone</li>
+                    <li>Watch</li>
+                    <li>AirPods</li>
+                    <li>TV & Home</li>
+                    <li>Entertainment</li>
+                    <li>Accessories</li>
+                    <li>Support</li>
                 </ul>
             </nav>
+        </div>
+        
+        <div class="hero-container">
+            <div>        
+                <h2><u>Hello</u></h2>
+                <h5>I'M</h5>
+                <h1>Tejash Pemmu</h1>
+            </div>
+        </div>
+
+        <section>
+            
+            <div class="section-title">                
+                <h1>Product Gallery</h1>
+            </div>
             <article>
-                <h1>Pollution</h1>
-                <p>Pollution is the introduction of contaminants into the natural environment that cause harm.Pollution can take the form of any substance or energy.Pollutants, the components of pollution, can be either foreign substances/energies or naturally occurring contaminants.The five main types of pollution are:<u>Air</u>, <u>Water</u>, <u>Soil</u>, <u>Noise</u>, and <u>Light pollution</u>.These forms of pollution can have detrimental effects on the environment, human health, and ecosystems.</p>
-                <h1>Air Pollution</h1>
-                <p>Air pollution is contamination of the indoor or outdoor environment by any chemical, physical or biological agent that modifies the natural characteristics of the atmosphere.</p>
-                <h1>Water Pollution</h1>
-                <p>Water pollution is the release of substances into bodies of water that make water unsafe for human use and disrupt aquatic ecosystems.</p>
-                <h1>Soil Pollution</h1>
-                <p>Soil pollution is defined as contamination of soil at higher than normal concentrations by waste materials of human origin that have adverse effects on human and ecosystem health.</p>
-                <h1>Noise Pollution</h1>
-                <p>Noise pollution is the propagation of noise or sound with potential harmful effects on humans and animals.The source of outdoor noise worldwide is mainly caused by machines, transport and propagation systems.</p>
-                <h1>Light Pollution</h1>
-                <p>Light pollution is the excessive or misdirected use of artificial light outdoors, which can negatively impact wildlife, human health, and the environment.</p>
+                <div class="product-card">
+                    <div class="product-info">
+                        <h1>AirPods</h1>
+                    </div>
+                    <div class="product-info">
+                        <h1><img src="./img/image11.jpg" width="250px" height="250px"/></h1>
+                    </div>
+                    <div class="product-info">
+                        <p>AirPods are wireless Bluetooth earbuds designed and developed by Apple. They are typically depicted as small, white, and stem-shaped, and are often shown with their charging case. The AirPods Pro 2, for example, are known for their noise-canceling capabilities.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-info">
+                        <h1>Watch</h1>
+                    </div>
+                    <div class="product-info">
+                        <h1><img src="./img/image12.jpg" width="250px" height="250px"/></h1>
+                    </div>
+                    <div class="product-info">
+                        <p>An Apple Watch is a smartwatch produced by Apple Inc. It is available in various models like Apple Watch Series 9, Apple Watch Ultra 2, and Apple Watch SE, each offering different features and designs. To get a specific image of an Apple Watch in jpg format, you can search on stock photo websites like Getty Images, Shutterstock, or Adobe Stock.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-info">
+                        <h1>iPad</h1>
+                    </div>
+                    <div class="product-info">
+                        <h1><img src="./img/image13.jpg" width="250px" height="250px"/></h1>
+                    </div>
+                    <div class="product-info">
+                        <p>The Apple iPad is a tablet computer. It is available in various models, including iPad (10th generation), iPad Air, and iPad Pro, with different screen sizes and features. These models can be found in various colors and configurations, and are designed for a range of uses from basic computing to professional creative work. They are known for their Liquid Retina displays, powerful processors, and compatibility with Apple Pencil and other accessories.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-info">
+                        <h1>iMac</h1>
+                    </div>
+                    <div class="product-info">
+                        <h1><img src="./img/image14.jpg" width="250px" height="250px"/></h1>
+                    </div>
+                    <div class="product-info">
+                        <p>The iMac is a series of all-in-one personal computers designed and manufactured by Apple. It combines the computer and display into a single unit. The iMac has evolved over the years, with various models featuring different designs, processors, and display technologies. The current iMac models utilize Apple's own silicon chips, such as the M4 chip, and feature a 4.5K Retina display.</p>
+                    </div>
+                </div>
             </article>
+
         </section>
+
+        <section>  
+
+            <div class="section-title">                
+                <h1>Image Gallery</h1>
+            </div>
+            <article>
+                <div class="gallery-card">
+                    <h1>Zeyox Studio</h1>
+                        <h1><img src="./img/image15.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Awasmd</h1>
+                        <h1><img src="./img/image16.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Ally Adkimson</h1>
+                        <h1><img src="./img/image17.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Eloqwnt</h1>
+                        <h1><img src="./img/image18.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Pickolab Studio</h1>
+                        <h1><img src="./img/image19.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Oripio</h1>
+                        <h1><img src="./img/image20.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Odama</h1>
+                        <h1><img src="./img/image21.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Awe Design Studio</h1>
+                        <h1><img src="./img/image22.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>tubik.arts</h1>
+                        <h1><img src="./img/image23.jpg" width="100%" height="100%"/></h1>
+                </div>
+                <div class="gallery-card">
+                    <h1>Junaki</h1>
+                        <h1><img src="./img/image24.jpg" width="100%" height="100%"/></h1>
+                </div>
+            </article>
+
+        </section>
+
         <footer>
-            <h1><b>End</b></h1>
+                
+                 <div class="list-title">
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Shop and Learn</h4></li>
+                            <li><a href="#">Store</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Watch</a></li>
+                            <li><a href="#">AirPods</a></li>
+                            <li><a href="#">TV & Home</a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>            
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Apple Wallet</h4></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="list-title">
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Account</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>              
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Entertainment</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="list-title">
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Apple Store</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="list-title">
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>For Business</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>For Education</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div> 
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>For Healthcare</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div> 
+                </div>
+            
+                <div class="list-title">
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>Apple Values</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>              
+                    <div class="list-card">
+                        <ul> 
+                            <li><h4>About Apple</h4></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                            <li><a href="#">b</a></li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div class="footer-title">
+                    <div class="footer-card">
+                        <p>More ways to shop: <a href="https://www.apple.com/in/retail/">Find an Apple Store</a> or <a href="https://locate.apple.com/in/en/">other retailer</a> near you. Or call: <a href="tel:000800%C2%A0040%C2%A01966">000800401986</a></p>
+                    </div>
+                    <div class="footer-card">
+                        <p>Copyright © 2025 Apple Inc. All rights reserved</p>
+                        <ul>
+                            <li><a href="https://www.apple.com/in/legal/privacy/">Privacy Policy</a></li>
+                            <li>|</li>
+                            <li><a href="https://www.apple.com/in/legal/terms/site.html">Terms Of Use</a></li>
+                            <li>|</li>
+                            <li><a href="https://www.apple.com/in/shop/goto/help/sales_refunds">Sales Policy</a></li>
+                            <li>|</li>
+                            <li><a href="https://www.apple.com/in/legal/">Legal</a></li>
+                            <li>|</li>
+                            <li><a href="https://www.apple.com/in/sitemap/">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
         </footer>
+        
     </body>
 </html>
