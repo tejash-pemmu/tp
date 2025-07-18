@@ -1,45 +1,41 @@
 <html>
     <head>
-        <title>My First Layout</title>
+        <title>My Second Layout</title>
     </head>
     <style>
+
         body{
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 12px;
         }
+
         header {
             padding: 0 30px;
             overflow: auto;
         }
+
         .logo {
             float: left;
             padding: 20px;
         }
+
         .logo img {
             height: 15px;
         }
+
         nav {
             float: right;
         }
+
         nav ul {
             margin: 0;
         }
+
         nav ul li{
             display: inline-block;
             padding: 20px;
-        }
-        .hero-container {
-            background-size: 100% 100%;
-            color: #fff;
-            height: 400px;
-        }
-        .hero-container h5 {
-            font-family:Arial, Helvetica, sans-serif;
-        }
-        .hero-container h1 {
-
         }
 
         .hero-name {
@@ -63,6 +59,7 @@
         .hero-banner img {
             width: 100%;
         }
+
         .section-title {
             float: left;
             text-align: center;
@@ -70,6 +67,7 @@
             padding: 40px 0;
             font-size: 35px;
         }
+
         article {
             float: left;
             text-align: center;
@@ -77,6 +75,7 @@
             padding-bottom: 40px;
             font-family: Arial, Helvetica, sans-serif;
         }
+
         .product-card {
             float: left;
             margin: 20px 0 0 20px;
@@ -87,6 +86,7 @@
             overflow: hidden;
             height: 350px;
         }
+
         .product-name {
             font-size: 20px;
         }
@@ -95,9 +95,11 @@
         .product-info {
             color: #756b6b;
         }
-        .image-gallary {
+
+        .image-gallery {
             background: #e4ebeb;
         }
+
         .gallery-card {
             float: left;
             margin: 20px 0 0 20px;
@@ -106,34 +108,76 @@
             border-radius: 10px;
             overflow: hidden;
         }
+
+        .gallery-name {
+            font-size: 20px;
+            padding-bottom: 25px;
+        }
+
         section:after {
             content: "";
             display: block;
             clear: both;
         }
-        .list-title {           
+
+        .footer-lists { 
+            width: 17.4%;    
             float: left;
             margin: 20px;
+            
         }
-        .list-card {            
-            border: 1px solid #000;
-            border-radius: 10px;
-            width: 264.6px;
+
+        .footer-list-block {     
             padding: 10px 0 10px 10px;
+            font-size: 13px;
         }
-        .list-card ul {
+
+        .footer-list-block ul {
             list-style-type: none;
+            margin-left: -39px;
         }
-        .footer-title {    
-            padding: 20px;
+
+        .footer-list-block ul li a {
+            color:#606969;
         }
-        .footer-card {    
-            border: 1px solid #000;
-            border-radius: 10px;
+
+        .footer {    
+            float: left;
+            width: 100%;
+            color:#707879;
+            font-size: 15px;
         }
-        .footer-card ul li {
+
+        .footer-card {
+            padding: 15px;
+        }
+
+        .footer-card a {
+            color:rgb(66, 128, 185);
+        }
+
+        .Copyright {
+            float: left;
+            width: 45%;
+            padding: 15px;
+        }
+
+        .footer-links {
+            float: right;
+            width: 45%;
+            padding: -6px;
+            text-align: right;
+        }
+
+        .footer-links ul li {
             display: inline;
+            padding: 5px;
         }
+
+        .footer-links ul li a {
+            color:#606969;
+        }
+
     </style>
     <body>
 
@@ -179,7 +223,7 @@
                         AirPods
                     </div>
                     <div class="product-image">
-                        <h1><img src="./img/image11.jpg" width="250px" height="250px"/></h1>
+                        <img src="./img/image11.jpg" width="250px" height="250px"/>
                     </div>
                     <div class="product-info">
                         <p>AirPods are wireless Bluetooth earbuds designed and developed by Apple. They are typically depicted as small</p>
@@ -190,7 +234,7 @@
                         Watch
                     </div>
                     <div class="product-image">
-                        <h1><img src="./img/image12.jpg" width="250px" height="250px"/></h1>
+                        <img src="./img/image12.jpg" width="250px" height="250px"/>
                     </div>
                     <div class="product-info">
                         <p>An Apple Watch is a smartwatch produced by Apple Inc. It is available in various models like Apple Watch Series</p>
@@ -201,7 +245,7 @@
                         iPad
                     </div>
                     <div class="product-image">
-                        <h1><img src="./img/image13.jpg" width="250px" height="250px"/></h1>
+                        <img src="./img/image13.jpg" width="250px" height="250px"/>
                     </div>
                     <div class="product-info">
                         <p>The Apple iPad is a tablet computer. It is available in various models, including iPad </p>
@@ -212,7 +256,7 @@
                         iMac
                     </div>
                     <div class="product-image">
-                        <h1><img src="./img/image14.jpg" width="250px" height="250px"/></h1>
+                        <img src="./img/image14.jpg" width="250px" height="250px"/>
                     </div>
                     <div class="product-info">
                         <p>The iMac is a series of all-in-one personal computers designed and manufactured by Apple.</p>
@@ -222,189 +266,213 @@
 
         </section>
 
-        <section class="image-gallary">  
+        <section class="image-gallery">  
 
             <div class="section-title">                
                 Image Gallery
             </div>
             <article>
                 <div class="gallery-card">
-                    <h1>Zeyox Studio</h1>
-                        <img src="./img/image15.jpg" width="100%" />
+                    <div class="gallery-name">                      
+                        Zeyox Studio
+                    </div>
+                    <img src="./img/image15.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Awasmd</h1>
-                        <img src="./img/image16.jpg" width="100%" />
+                    <div class="gallery-name">                      
+                        Awasmd
+                    </div>
+                    <img src="./img/image16.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Ally Adkimson</h1>
-                        <img src="./img/image17.jpg" width="100%" />
+                    <div class="gallery-name">                      
+                        Ally Adkimson
+                    </div>
+                    <img src="./img/image17.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Eloqwnt</h1>
-                        <img src="./img/image18.jpg" width="100%" />
+                    <div class="gallery-name">                      
+                        Eloqwnt
+                    </div>
+                    <img src="./img/image18.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Pickolab Studio</h1>
-                        <h1><img src="./img/image19.jpg" width="100%" /></h1>
+                    <div class="gallery-name">                      
+                        Pickolab Studio
+                    </div>
+                    <img src="./img/image19.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Oripio</h1>
-                        <h1><img src="./img/image20.jpg" width="100%" /></h1>
+                    <div class="gallery-name">                      
+                        Oripio
+                    </div>
+                    <img src="./img/image20.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Odama</h1>
-                        <h1><img src="./img/image21.jpg" width="100%"/></h1>
+                    <div class="gallery-name">                      
+                        Odama
+                    </div>
+                    <img src="./img/image21.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Awe Design Studio</h1>
-                        <h1><img src="./img/image22.jpg" width="100%" /></h1>
+                    <div class="gallery-name">                      
+                        Awe Design Studio
+                    </div>
+                    <img src="./img/image22.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>tubik.arts</h1>
-                        <h1><img src="./img/image23.jpg" width="100%" /></h1>
+                    <div class="gallery-name">                      
+                        tubik.arts
+                    </div>
+                    <img src="./img/image23.jpg" width="100%" />
                 </div>
                 <div class="gallery-card">
-                    <h1>Junaki</h1>
-                        <h1><img src="./img/image24.jpg" width="100%" /></h1>
+                    <div class="gallery-name">                      
+                        Junaki
+                    </div>
+                    <img src="./img/image24.jpg" width="100%" />
                 </div>
             </article>
 
         </section>
 
         <footer>
+
+            <div class="footer-lists">
                 
-                 <div class="list-title">
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Shop and Learn</h4></li>
-                            <li><a href="#">Store</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">iPad</a></li>
-                            <li><a href="#">iPhone</a></li>
-                            <li><a href="#">Watch</a></li>
-                            <li><a href="#">AirPods</a></li>
-                            <li><a href="#">TV & Home</a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>            
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Apple Wallet</h4></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-list-block">
+                    <h4>Shop and Learn</h4>
+                    <ul>
+                        <li><h4><a href="#">Store</a></h4></li>
+                        <li><h4><a href="#">Mac</a></h4></li>
+                        <li><h4><a href="#">iPad</a></h4></li>
+                        <li><h4><a href="#">iPhone</a></h4></li>
+                        <li><h4><a href="#">Watch</a></h4></li>
+                        <li><h4><a href="#">AirPods</a></h4></li>
+                        <li><h4><a href="#">TV & Home</a></h4></li>
+                        <li><h4><a href="#">Accessories</a></h4></li>
+                        <li><h4><a href="#">Gift Cards</a></h4></li>
+                    </ul>
+                </div>            
+                <div class="footer-list-block">
+                    <h4>Apple Wallet</h4>
+                    <ul>
+                        <li><h4><a href="">Wallet</a></h4></li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="list-title">
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Account</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>              
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Entertainment</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>
+            <div class="footer-lists">
+                <div class="footer-list-block">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><h4><a href="#">Manage Your Apple Account</a></h4></li>
+                        <li><h4><a href="#">Apple Store Account</a></h4></li>
+                        <li><h4><a href="#">iCloud.com</a></h4></li>
+                    </ul>
+                </div>              
+                <div class="footer-list-block">
+                    <h4>Entertainment</u>
+                    <ul>
+                        <li><h4><a href="#">Apple One</a></h4></li>
+                        <li><h4><a href="#">Apple TV+</a></h4></li>
+                        <li><h4><a href="#">Apple Music</a></h4></li>
+                        <li><h4><a href="#">Apple Arcade</a></h4></li>
+                        <li><h4><a href="#">Apple Podcasts</a></h4></li>
+                        <li><h4><a href="#">Apple Books</a></h4></li>
+                        <li><h4><a href="#">App Store</a></h4></li>
+                    </ul>
                 </div>
-            
-                <div class="list-title">
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Apple Store</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>
+            </div>
+        
+            <div class="footer-lists">
+                <div class="footer-list-block">
+                    <h4>Apple Store</h4>
+                    <ul>
+                        <li><h4><a href="#">Find a Store</a></h4></li>
+                        <li><h4><a href="#">Genius Bar</a></h4></li>
+                        <li><h4><a href="#">Today at Apple</a></h4></li>
+                        <li><h4><a href="#">Apple Summer Camp</a></h4></li>
+                        <li><h4><a href="#">Ways to Buy</a></h4></li>
+                        <li><h4><a href="#">Apple Trade</a></h4></li>
+                        <li><h4><a href="#">Recycling Programme</a></h4></li>
+                        <li><h4><a href="#">Find your Order - Apple</a></h4></li>
+                        <li><h4><a href="#">Shopping Help</a></h4></li>
+                    </ul>
                 </div>
-            
-                <div class="list-title">
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>For Business</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>For Education</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div> 
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>For Healthcare</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div> 
+            </div>
+        
+            <div class="footer-lists">
+                <div class="footer-list-block">
+                    <h4>For Business</h4>
+                    <ul>
+                        <li><h4><a href="#">Apple And Business</a></p></li>
+                    </ul>
                 </div>
-            
-                <div class="list-title">
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>Apple Values</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>              
-                    <div class="list-card">
-                        <ul> 
-                            <li><h4>About Apple</h4></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                            <li><a href="#">b</a></li>
-                        </ul>
-                    </div>  
-                </div>
+                <div class="footer-list-block">
+                    <h4>For Education</h4>
+                    <ul>
+                        <li><h4><a href="#">Apple and Education</a></h4></li>
+                        <li><h4><a href="#">Shop for Education</a></h4></li>
+                        <li><h4><a href="#">Shop for College</a></h4></li>
+                    </ul>
+                </div> 
+                <div class="footer-list-block">
+                    <h4>For Healthcare</h4>
+                    <ul>
+                        <li><h4><a href="#">Apple in Healthcare</a></h4></li>
+                        <li><h4><a href="#">Health on Apple Watch</a></h4></li>
+                    </ul>
+                </div> 
+            </div>
+        
+            <div class="footer-lists">
+                <div class="footer-list-block">
+                    <h4>Apple Values</h4>
+                    <ul>
+                        <li><h4><a href="#">Accessiblity</a></h4></li>
+                        <li><h4><a href="#">Environment</a></h4></li>
+                        <li><h4><a href="#">Privacy</a></h4></li>
+                        <li><h4><a href="#">Supply Chain</a></h4></li>
+                    </ul>
+                </div>              
+                <div class="footer-list-block">
+                    <h4>About Apple</h4>
+                    <ul>
+                        <li><h4><a href="#">Newsroom</a></h4></li>
+                        <li><h4><a href="#">Apple Leadership</a></h4></li>
+                        <li><h4><a href="#">Career Opportunities</a></h></li>
+                        <li><h4><a href="#">Investors</a></h4></li>
+                        <li><h4><a href="#">Ethics & Compliance</a></h4></li>
+                        <li><h4><a href="#">Events</a></h4></li>
+                        <li><h4><a href="#">Contact Apple</a></h4></li>
+                    </ul>
+                </div>  
+            </div>
 
-                <div class="footer-title">
-                    <div class="footer-card">
-                        <p>More ways to shop: <a href="https://www.apple.com/in/retail/">Find an Apple Store</a> or <a href="https://locate.apple.com/in/en/">other retailer</a> near you. Or call: <a href="tel:000800%C2%A0040%C2%A01966">000800401986</a></p>
-                    </div>
-                    <div class="footer-card">
-                        <p>Copyright © 2025 Apple Inc. All rights reserved</p>
-                        <ul>
-                            <li><a href="https://www.apple.com/in/legal/privacy/">Privacy Policy</a></li>
-                            <li>|</li>
-                            <li><a href="https://www.apple.com/in/legal/terms/site.html">Terms Of Use</a></li>
-                            <li>|</li>
-                            <li><a href="https://www.apple.com/in/shop/goto/help/sales_refunds">Sales Policy</a></li>
-                            <li>|</li>
-                            <li><a href="https://www.apple.com/in/legal/">Legal</a></li>
-                            <li>|</li>
-                            <li><a href="https://www.apple.com/in/sitemap/">Site Map</a></li>
-                        </ul>
-                    </div>
+            <div class="footer">
+                <div class="footer-card">
+                    More ways to shop: 
+                    <a href="https://www.apple.com/in/retail/">Find an Apple Store</a> or <a href="https://locate.apple.com/in/en/">other retailer</a> near you. Or call: 000800 040 1986</a>
                 </div>
+                <hr>
+                <div class="Copyright">
+                    Copyright © 2025 Apple Inc. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="https://www.apple.com/in/legal/privacy/">Privacy Policy</a></li>
+                        <li>|</li>
+                        <li><a href="https://www.apple.com/in/legal/terms/site.html">Terms Of Use</a></li>
+                        <li>|</li>
+                        <li><a href="https://www.apple.com/in/shop/goto/help/sales_refunds">Sales Policy</a></li>
+                        <li>|</li>
+                        <li><a href="https://www.apple.com/in/legal/">Legal</a></li>
+                        <li>|</li>
+                        <li><a href="https://www.apple.com/in/sitemap/">Site Map</a></li>
+                    </ul>
+                </div>
+            </div>
                 
         </footer>
         
