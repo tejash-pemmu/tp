@@ -7,22 +7,15 @@
         <style> 
 
             body {
-                border: 1px solid #000;
+                /* border: 1px solid #000; */
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 0;
                 padding: 0;
             }
 
-            header {
-                /* border: 1px solid #000; */
-            }
-
-            .header-container {
-                /* border: 1px solid #000; */
-            }
-
             .logo {
                 /* border: 1px solid #000; */
+                background-color: #ffc4cf;
                 width: 100%;
                 float: left;
             }
@@ -38,7 +31,6 @@
                 /* border: 1px solid #000; */
                 padding-right: 50px;
                 float: right;
-                list-style-type: none;
             }
 
             .logo ul li {
@@ -47,69 +39,108 @@
                 padding: 5px;
             }
 
-            .menu  {
+            .menu nav {
                 /* border: 1px solid #000; */
-                list-style-type: none;
+                background-color: #ffc4cf;
+                display: inline-block;
                 width: 100%;
-                /* float: left; */
             }
 
-            nav ul {
+            .menu-list {
                 /* border: 1px solid #000; */
-                padding: 20px 30px 0px 35px;
+                padding-bottom: 10px;
+                float: left;
+            }
+
+            .menu-list ul {
+                /* border: 1px solid #000; */
+                padding: 20px 30px 0 35px;
                 float: left;
                 list-style-type: none;
             }
 
-            nav ul li {
+            .menu-list ul li {
                 /* border: 1px solid #000; */
+                padding: 5px 40px 5px 40px;
                 display: inline-block;
-                padding: 5px;
+                color: #fff;
             }
 
-            .contact  {
+            .contact {
                 /* border: 1px solid #000; */
-                padding-right: 20px;
-                float: right;
+                padding-bottom: 10px;
             }
 
             .contact ul {
                 /* border: 1px solid #000; */
-                padding: 20px 30px 0px 35px;
+                padding: 32px 55px 0 0;
+                float: right;
+                list-style-type: none;
             }
-
+             
             .contact ul li {
                 /* border: 1px solid #000; */
                 display: inline-block;
-                padding: 5px;
+                padding-left: 10px;
+                color: #fff;
             }
 
-            .hero-image img {
-                /* border: 1px solid #000; */
-            }
-
-            
-            .section-1-title {
-                border: 1px solid #000;
+            .hero-image {
                 float: left;
+            }
+
+            .gallary {
+                /* border: 1px solid #000; */
                 text-align: center;
-                width: 98.65%;
                 padding: 10px;
                 font-size: 30px;
             }
-
             
             article {
-                border: 1px solid #000;
+                /* border: 1px solid #000; */
+                background-color: rgb(217 223 222);
                 float: left;
                 text-align: center;
-                width: 97.35%;
                 padding: 20px;
                 font-size: 30px;
             }
 
-            .product-cards {
-                border: 1px solid #000;
+            .gallary-cards {
+                /* border: 1px solid #000;*/
+                margin: 2.2%;
+                display: inline-block;
+                width: 15%;
+            }
+
+            .image {
+                /* border: 1px solid #000; */
+                border-radius: 100px;
+                overflow: hidden;
+            }
+
+            .gallary-name {
+                /* border: 1px solid #000; */
+                text-align: center;
+                font-size: 17px;
+            }
+
+            .gallary-block img {
+                /* border: 1px solid #000; */
+                display: inline;
+                margin: 40px;
+                padding: 6px;
+            }
+
+            .Appliances {
+                /* border: 1px solid #000; */
+                padding: 10px 0 10px 30px;
+                font-size: 30px;
+            }
+            
+            section:after {
+                content: "";
+                display: table;
+                clear: both;
             }
 
         </style>
@@ -126,10 +157,10 @@
 
                     <img src="./img/logo3.png"/>
 
-                        <ul>
-                            <li><a href="https://www.novaindia.co.in/">Sign In</a></li>
-                            <li><a href="https://www.novaindia.co.in/">Cart</a></li>
-                        </ul>
+                    <ul>
+                        <li><a href="https://www.novaindia.co.in/">Sign In</a></li>
+                        <li><a href="https://www.novaindia.co.in/">Cart</a></li>
+                    </ul>
 
                 </div> 
 
@@ -137,9 +168,9 @@
 
             <div class="menu">
 
-                <div class="menu list">
+                <nav>
 
-                    <nav>
+                    <div class="menu-list">
 
                         <ul>
                             <li>Personal Care</li>
@@ -150,18 +181,18 @@
                             <li>FAQ's</li>
                         </ul>
 
-                    </nav>
+                    </div>
+                    
+                    <div class="contact"> 
 
-                </div>
+                        <ul> 
+                            <li><a href="#">Help</a></li>
+                            <li>|</li>
+                        </ul>
 
-                <div class="contact">
-
-                    <ul>
-                        <li><a href="https://www.novaindia.co.in/pages/contact-us">Help</a></li>
-                        <li>|</li>
-                    </ul>
-
-                </div>
+                    </div>
+                
+                </nav>
 
             </div>
 
@@ -172,13 +203,14 @@
             <div class="hero-image">
 
                 <img src="./img/image25.jpg" width="100%"/>
+
             </div>
 
         </section>
         
         <section>
 
-            <div class="section-1-title">
+            <div class="gallary">
 
                 Shop By Categories
 
@@ -186,10 +218,194 @@
 
             <article>
 
-                <div class="product-cards">
-                    <div class="product-image">
-                        <!-- <img src="./img/image26.jpg"/> -->
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image26.jpg"/>
+
                     </div>
+
+                    <div class="gallary-name">
+
+                        Trimmers
+
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image27.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Hair Clippers
+
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image28.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Grooming Kit
+
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image29.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Hair Straighteners
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image30.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Hair Dryers
+                        
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image31.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Home Appliances
+                        
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image32.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Kitchen Appliances
+                        
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image33.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Massagers
+                        
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image34.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Accessories
+                        
+                    </div>
+
+                </div>
+
+                <div class="gallary-cards">
+
+                    <div class="image">
+
+                        <img src="./img/image35.jpg"/>
+
+                    </div>
+
+                    <div class="gallary-name">
+
+                        Health And Fitness
+                        
+                    </div>
+
+                </div>
+
+            </article>
+
+            <div class="gallary-block">
+
+                <img src="./img/img1.jpg" width="45%"/>
+
+                <img src="./img/img2.jpg" width="45%"/>
+
+                <img src="./img/img3.jpg" width="45%"/>
+
+                <img src="./img/img4.jpg" width="45%"/>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div class="Appliances">
+
+                Top Hair Care Appliances
+
+            </div>
+
+            <article>
+
+                <div class="">
+
                 </div>
 
             </article>
