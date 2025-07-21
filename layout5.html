@@ -1,4 +1,4 @@
-<html>
+<html> 
 
     <head>
 
@@ -15,7 +15,6 @@
 
             .logo {
                 /* border: 1px solid #000; */
-                background-color: #90aee5;
                 width: 100%;
                 float: left;
             }
@@ -27,16 +26,25 @@
                 width: 148px;
             }
 
-            .logo ul {
+            nav {
                 /* border: 1px solid #000; */
-                padding-right: 50px;
                 float: right;
             }
 
-            .logo ul li {
+            nav ul {
+                /* border: 1px solid #000; */
+                padding-right: 50px;
+            }
+
+            nav ul li {
                 /* border: 1px solid #000; */
                 display: inline-block;
                 padding: 5px;
+            }
+
+            menu {
+                /* border: 1px solid #000; */
+                width: 100%;
             }
 
             .menu nav {
@@ -48,32 +56,25 @@
 
             .menu-list {
                 /* border: 1px solid #000; */
-                padding-bottom: 10px;
                 float: left;
             }
 
             .menu-list ul {
                 /* border: 1px solid #000; */
-                padding: 20px 30px 0 35px;
                 float: left;
                 list-style-type: none;
             }
 
             .menu-list ul li {
                 /* border: 1px solid #000; */
-                padding: 5px 40px 5px 40px;
+                padding: 5px 35px 0px 35px;
                 display: inline-block;
                 color: #fff;
             }
 
-            .contact {
-                /* border: 1px solid #000; */
-                padding-bottom: 10px;
-            }
-
             .contact ul {
                 /* border: 1px solid #000; */
-                padding: 32px 55px 0 0;
+                padding: 0 50px 0 0;
                 float: right;
                 list-style-type: none;
             }
@@ -81,32 +82,34 @@
             .contact ul li {
                 /* border: 1px solid #000; */
                 display: inline-block;
-                padding-left: 10px;
                 color: #fff;
             }
 
             .hero-image {
+                /* border: 1px solid #000; */
                 float: left;
             }
 
             .gallary {
                 /* border: 1px solid #000; */
                 text-align: center;
-                padding: 10px;
+                padding: 50px;
+                width: 100%;
+                float: left;
                 font-size: 30px;
             }
             
             article {
                 /* border: 1px solid #000; */
-                background-color: rgb(217 223 222);
                 float: left;
+                width: 100%;
                 text-align: center;
                 padding: 20px;
                 font-size: 30px;
             }
 
             .gallary-cards {
-                /* border: 1px solid #000;*/
+                /* border: 1px solid #000; */
                 margin: 2.2%;
                 display: inline-block;
                 width: 15%;
@@ -114,7 +117,6 @@
 
             .image {
                 /* border: 1px solid #000; */
-                border-radius: 100px;
                 overflow: hidden;
             }
 
@@ -127,21 +129,55 @@
             .gallary-block img {
                 /* border: 1px solid #000; */
                 display: inline;
+                width: 45%;
                 margin: 35px;
             }
 
             .Appliances {
                 /* border: 1px solid #000; */
-                padding: 10px 0 10px 30px;
+                padding: 40px 0px 40px 40px;
                 font-size: 30px;
             }
+
+            .product-cards {
+                /* border: 1px solid #000; */
+                display: inline-block;
+                width: 15%;
+            }
+
+            .product-info {
+                /* border: 1px solid #000; */
+                text-align: left;
+                height: 100px;
+                font-size: 15px;
+                overflow: hidden;
+            }
+
+            .partner {
+                /* border: 1px solid #000; */
+                text-align: center;
+                margin: 10px;
+                padding: 30px;
+                font-size: 22px;
+            }
             
+            .part-logos {
+                /* border: 1px solid #000; */
+                text-align: center;
+            }
+
+            .part-logos img {
+                /* border: 1px solid #000; */
+                width: 10%;
+                padding: 25px;
+            }
+
             section:after {
                 content: "";
                 display: table;
                 clear: both;
             }
-
+            
         </style>
     
     </head>
@@ -150,20 +186,20 @@
 
         <header>
 
-            <div class="header-container">
+            <div class="logo">
 
-                <div class="logo">
+                <img src="./img/logo3.png"/>
 
-                    <img src="./img/logo3.png"/>
+                <nav>
 
                     <ul>
                         <li><a href="https://www.novaindia.co.in/">Sign In</a></li>
                         <li><a href="https://www.novaindia.co.in/">Cart</a></li>
                     </ul>
 
-                </div> 
+                </nav>
 
-            </div>
+            </div> 
 
             <div class="menu">
 
@@ -186,7 +222,6 @@
 
                         <ul> 
                             <li><a href="https://www.novaindia.co.in/pages/contact-us">Help</a></li>
-                            <li>|</li>
                         </ul>
 
                     </div>
@@ -381,13 +416,13 @@
 
             <div class="gallary-block">
 
-                <img src="./img/img1.jpg" width="45%"/>
+                <img src="./img/img1.jpg"/>
 
-                <img src="./img/img2.jpg" width="45%"/>
+                <img src="./img/img2.jpg"/>
 
-                <img src="./img/img3.jpg" width="45%"/>
+                <img src="./img/img3.jpg"/>
 
-                <img src="./img/img4.jpg" width="45%"/>
+                <img src="./img/img4.jpg"/>
 
             </div>
 
@@ -406,10 +441,204 @@
                 <div class="product-cards">
 
                     <div class="product-image">
+
+                        <img src="./img/image37.jpg"/>
                         
                     </div>
 
                     <div class="product-info">
+
+                        Nova NLS 532 Facial Sensi-Trim Touch Runtime: 60 min Trimmer for Women<br>SKU: NLS 532<br>Rs. 1,795.00  
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image38.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        Nova NLS 530 Sensi-Trim Touch Runtime: 45 min Trimmer for Women<br>SKU: Nova Bikini Trimmer S3o<br>Rs. 1,295.00  
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image39.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        Nova NLS 511 Runtime: 60 min Trimmer for Women<br>SKU: ns 511 Bikini Trimmer<br>Rs. 1495.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image40.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        Nova Professional NHP 8210 Hair Dryer<br>SKU: NHP 8210<br>Rs. 1498.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image41.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        Nova Temperature Control Professional NHS 860 Hair Straightener<br>SKU: NHS 860<br>Rs. 2395.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image42.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        Nova Professional NHP 8220 Hair Dryer<br>SKU: NHP 8220<br>Rs. 1899.00 
+                        
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+        
+        <section>
+
+            <div class="Appliances">
+
+                Top Home Appliances
+
+            </div>
+
+            <article>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image43.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        BAJAJ SPLENDORA MIXER GRINDER<br>SKU:<br>Rs. 2,999.00  
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image44.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        BAJAJ GX300 MIXER GRINDER<br>SKU:<br>Rs. 2,899.00  
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image45.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        BF RICE COOKER<br>SKU:<br>Rs. 2,859.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image46.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        BUTTERFLY PESTLE MIXER GRINDER<br>SKU:<br>Rs. 2,499.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image47.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        BAJAJ AIR STREAM TOWER FAN<br>SKU: 1<br>Rs. 2,399.00 
+                        
+                    </div>
+
+                </div>
+
+                <div class="product-cards">
+
+                    <div class="product-image">
+
+                        <img src="./img/image48.jpg"/>
+                        
+                    </div>
+
+                    <div class="product-info">
+
+                        EVEREADY KETTLE<br>SKU:<br>Rs. 799.00 
                         
                     </div>
 
@@ -421,9 +650,35 @@
 
         <section>
 
-            
+            <div class="partner">
+
+                OUR PARTNERS
+
+            </div>
+
+            <div class="part-logos">
+
+                <img src="./img/logo6.jpg">
+                <img src="./img/logo8.jpg">
+                <img src="./img/logo9.jpg">
+                <img src="./img/logo10.jpg">
+                <img src="./img/logo11.jpg">
+
+            </div>
+
+            <div class="partner">
+
+                Follow The NOVA Vibe
+
+            </div>
 
         </section>
+
+        <footer>
+
+            
+
+        </footer>
 
     </body>
 
