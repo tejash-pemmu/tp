@@ -2,7 +2,7 @@
     <head>
         <style>
             body {
-                border: 1px solid #000;
+                /* border: 1px solid #000; */
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 margin: 0;
                 padding: 0;
@@ -10,28 +10,30 @@
 
             header {
                 border: 1px solid #000;
+                overflow: auto;
             }
             
+            .header-container {
+                /* border: 1px solid #000; */
+                overflow: auto;
+            }
+
             .logo {
-                border: 1px solid #000;
-                margin: 10px;
+                /* border: 1px solid #000; */
+                padding-left: 50px;
+                float: left;
+
             }
 
             .logo img {
                 /* border: 1px solid #000; */
-                padding-left: 40px;
-                width: 10%;
+                width: 44%;
             }
 
             .login {
                 /* border: 1px solid #000; */
-                padding-right: 40px;
+                padding-right: 50px;
                 float: right;
-            }
-
-            .login ul {
-                /* border: 1px solid #000; */
-                list-style-type: none;
             }
 
             .login ul li {
@@ -41,34 +43,32 @@
             }
             
             .menu-list {
-                border: 1px solid #000;
-                margin: 10px;
-                height : 50px;
+                /* border: 1px solid #000; */
+                overflow: auto;
             }
 
-            nav {
+            .main-menu {
                 /* border: 1px solid #000; */
-                padding-right: 40px;
+                padding-left: 15px;
                 float: left;
             }
 
-
             nav ul li {
                 /* border: 1px solid #000; */
-                display: inline;
-                padding: 15px;
+                display: inline-block;
+                padding: 10px;
             }
             
             .contact {
                 /* border: 1px solid #000; */
-                padding-right: 40px;
+                padding-right: 50px;
                 float: right;
             }
 
             .contact ul li {
                 /* border: 1px solid #000; */
-                display: inline;
-                padding: 5px;
+                display: inline-block;
+                padding: 10px;
             }
 
             
@@ -78,10 +78,14 @@
         
         <header>
 
-            <div class="logo">
-                
-                <img src="./img/logo3.png"/>
+            <div class="header-container">
 
+                <div class="logo">
+
+                    <img src="./img/logo3.png"/>
+
+                </div>
+        
                 <div class="login">
 
                     <ul>
@@ -92,22 +96,28 @@
                 </div>
 
             </div>
-            <div class="menu-list">
 
-                <nav>
+           <div class="menu-list">
 
-                    <ul>
-                        <li>Personal Care</li>
-                        <li>Appliances</li>
-                        <li>Neckband</li>
-                        <li>Accessories</li>
-                        <li>Track Order</li>
-                        <li>FAQ's</li>
-                    </ul>
+                <div class="main-menu">
 
-                </nav>
-                     
+                    <nav>
+
+                        <ul>
+                            <li>Personal Care</li>
+                            <li>Appliances</li>
+                            <li>Neckband</li>
+                            <li>Accessories</li>
+                            <li>Track Order</li>
+                            <li>FAQ's</li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
                 <div class="contact">
+                    
 
                     <ul>
                         <li><a href="https://www.novaindia.co.in/pages/contact-us">Help</a></li>
