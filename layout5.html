@@ -6,7 +6,6 @@
         
         <style> 
 
-            
             body {
                 /* border: 1px solid #000; */
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,19 +15,23 @@
 
             header {
                 /* border: 1px solid #000; */
-                /* background-color: rgb(129, 34, 82); */
+            }
+            
+            .header-container {
+                /* border: 1px solid #000; */
+                overflow: auto;
             }
 
             .logo {
                 /* border: 1px solid #000; */
-                /* background-color: rgb(180, 143, 162); */
-                margin: 10px;
+                padding-left: 50px;
+                float: left;
+
             }
 
             .logo img {
                 /* border: 1px solid #000; */
-                padding-left: 50px;
-                width: 10%;
+                width: 44%;
             }
 
             .login {
@@ -37,57 +40,39 @@
                 float: right;
             }
 
-            .login ul {
-                /* border: 1px solid #000; */
-                list-style-type: none;
-            }
-
             .login ul li {
                 /* border: 1px solid #000; */
                 display: inline;
-                padding: 5px;
+                padding: 15px;
             }
-
+            
             .menu-list {
                 /* border: 1px solid #000; */
-                background-color: #90aee5;
+                overflow: auto;
             }
 
-            nav {
+            .main-menu {
                 /* border: 1px solid #000; */
-                width: 45%;
-                margin: 20px;
-                padding-right: 50px;
-                display: inline;
-            }
-
-            nav ul {
-                /* border: 1px solid #000; */
-                list-style-type: none;
+                padding-left: 15px;
+                float: left;
             }
 
             nav ul li {
                 /* border: 1px solid #000; */
                 display: inline-block;
-                padding: 20px;
+                padding: 10px;
             }
-
+            
             .contact {
                 /* border: 1px solid #000; */
-                margin: 10px;
                 padding-right: 50px;
                 float: right;
             }
 
-            .contact ul {
-                /* border: 1px solid #000; */
-                list-style-type: none;
-            }
-
             .contact ul li {
                 /* border: 1px solid #000; */
-                display: inline;
-                padding: 25px;
+                display: inline-block;
+                padding: 10px;
             }
 
             .hero-image {
@@ -220,13 +205,17 @@
     </head>
 
     <body>
+        
+        <header>
 
-         <header>
+            <div class="header-container">
 
-            <div class="logo">
-                
-                <img src="./img/logo3.png"/>
+                <div class="logo">
 
+                    <img src="./img/logo3.png"/>
+
+                </div>
+        
                 <div class="login">
 
                     <ul>
@@ -237,28 +226,34 @@
                 </div>
 
             </div>
-            <div class="menu-list">
 
-                <nav>
+           <div class="menu-list">
+
+                <div class="main-menu">
+
+                    <nav>
+
+                        <ul>
+                            <li>Personal Care</li>
+                            <li>Appliances</li>
+                            <li>Neckband</li>
+                            <li>Accessories</li>
+                            <li>Track Order</li>
+                            <li>FAQ's</li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <div class="contact">
+                    
 
                     <ul>
-                        <li>Personal Care</li>
-                        <li>Appliances</li>
-                        <li>Neckband</li>
-                        <li>Accessories</li>
-                        <li>Track Order</li>
-                        <li>FAQ's</li>
-                    </ul>
-
-                </nav>
-                
-                <!-- <nav>
-                    
-                    <ul> 
                         <li><a href="https://www.novaindia.co.in/pages/contact-us">Help</a></li>
                     </ul>
 
-                </nav> -->
+                </div>
 
             </div>
 
