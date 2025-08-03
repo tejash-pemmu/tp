@@ -6,15 +6,22 @@
 
         <style>
             body {
-                border: 1px solid rgb(0, 0, 0);
+                /* border: 1px solid rgb(0, 0, 0); */
                 background-color: powderblue;
             }
 
             div {
                 border: 1px solid rgb(0, 0, 0);
                 border-radius: 5px;
-                width: 25%; 
+                /* width: 25%;  */
                 margin: 10px;
+            }
+
+            li {
+                border: 1px solid rgb(0, 0, 0);
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
             }
 
         </style>
@@ -51,7 +58,7 @@
                     It's known for its mild climate and well-preserved colonial architecture.
             </div>
 
-            <div style="position: fixed; right: 0;">
+            <div style="position: fixed;">
                 <h1>Position : Fixed</h1>
                     Matheran is a hill station, near Mumbai, in the west Indian state of Maharashtra.
                     It's known for its mild climate and well-preserved colonial architecture.
@@ -61,7 +68,7 @@
                 Overflow
             </h1>
 
-            <div style="overflow: visible; width: 25%; height: 200px; margin-bottom: 50px;">
+            <div style="overflow: visible; width: 15%; height: 200px; margin-bottom: 180px;">
                 <h1>Overflow : Visible</h1>
                     Matheran is a hill station, near Mumbai, in the west Indian state of Maharashtra.
                     It's known for its mild climate and well-preserved colonial architecture.
@@ -70,7 +77,7 @@
                      Louisa Point has views of waterfalls and the ancient Prabal Fort.
             </div>
 
-            <div style="overflow: hidden; width: 25%; height: 200px;">
+            <div style="overflow: hidden; width: 15%; height: 200px;">
                 <h1>Overflow : Hidden</h1>
                     Matheran is a hill station, near Mumbai, in the west Indian state of Maharashtra.
                     It's known for its mild climate and well-preserved colonial architecture.
@@ -79,7 +86,7 @@
                      Louisa Point has views of waterfalls and the ancient Prabal Fort.
             </div>
 
-            <div style="overflow: scroll; width: 25%; height: 200px;">
+            <div style="overflow: scroll; width: 15%; height: 200px;">
                 <h1>Overflow : Scroll</h1>
                     Matheran is a hill station, near Mumbai, in the west Indian state of Maharashtra.
                     It's known for its mild climate and well-preserved colonial architecture.
@@ -88,7 +95,7 @@
                      Louisa Point has views of waterfalls and the ancient Prabal Fort.
             </div>
 
-            <div style="overflow: auto; width: 25%; height: 200px;">
+            <div style="overflow: auto; width: 15%; height: 200px;">
                 <h1>Overflow : Auto</h1>
                     Matheran is a hill station, near Mumbai, in the west Indian state of Maharashtra.
                     It's known for its mild climate and well-preserved colonial architecture.
@@ -98,7 +105,7 @@
             </div>
 
             <h1>
-                Visibility
+                Visibility : Hidden
             </h1>
 
             <div style="visibility: hidden; width: 25%; height: 200px;">
@@ -114,36 +121,44 @@
                 Display
             </h1>
 
-            <div style="display: none-block;">
+            <div>
                 <h1>Display : None</h1>
-                <img src="./img/img5.jpg"/>
-                <img src="./img/img6.jpg"/>
-                <img src="./img/img7.jpg"/>
-                <img src="./img/img8.jpg"/>
+                <ul>
+                    <li style="display: none;"><img src="./img/img5.jpg"/></li>
+                    <li style="display: none;"><img src="./img/img6.jpg"/></li>
+                    <li style="display: none;"><img src="./img/img7.jpg"/></li>
+                    <li style="display: none;"><img src="./img/img8.jpg"/></li>
+                </ul>
             </div>
 
             <div style="display: block;">
                 <h1>Display : Block</h1>
-                <img src="./img/img5.jpg"/>
-                <img src="./img/img6.jpg"/>
-                <img src="./img/img7.jpg"/>
-                <img src="./img/img8.jpg"/>
-            </div>
-
-            <div style="display: inline-block;">
-                <h1>Display : Inline-Block</h1>
-                <img src="./img/img5.jpg"/>
-                <img src="./img/img6.jpg"/>
-                <img src="./img/img7.jpg"/>
-                <img src="./img/img8.jpg"/>
+                <ul>
+                    <li style="display: block;"><img src="./img/img5.jpg"/></li>
+                    <li style="display: block;"><img src="./img/img6.jpg"/></li>
+                    <li style="display: block;"><img src="./img/img7.jpg"/></li>
+                    <li style="display: block;"><img src="./img/img8.jpg"/></li>
+                </ul>
             </div>
             
-            <div style="display: inline;">
+            <div>
                 <h1>Display : Inline</h1>
-                <img src="./img/img5.jpg"/>
-                <img src="./img/img6.jpg"/>
-                <img src="./img/img7.jpg"/>
-                <img src="./img/img8.jpg"/>
+                <ul>
+                    <li style="display: inline;"><img src="./img/img5.jpg"/></li>
+                    <li style="display: inline;"><img src="./img/img6.jpg"/></li>
+                    <li style="display: inline;"><img src="./img/img7.jpg"/></li>
+                    <li style="display: inline;"><img src="./img/img8.jpg"/></li>
+                </ul>
+            </div>
+
+            <div>
+                <h1>Display : Inline-Block</h1>
+                <ul>
+                    <li style="display: inline-block;"><img src="./img/img5.jpg"/></li>
+                    <li style="display: inline-block;"><img src="./img/img6.jpg"/></li>
+                    <li style="display: inline-block;"><img src="./img/img7.jpg"/></li>
+                    <li style="display: inline-block;"><img src="./img/img8.jpg"/></li>
+                </ul>
             </div>
 
     </body>
